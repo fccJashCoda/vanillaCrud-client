@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Store</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Store</a>
+          <a href="nav-link" href="/create.html">Create</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container mt-4">
+      <div class="alert alert-danger" role="alert" id="errorMessage">
+        This is a danger alert—check it out!
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            name="title"
+            id="title"
+            placeholder="Enter a title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            class="form-control"
+            name="description"
+            id="description"
+            placeholder="Enter a description"
+          ></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="price">Price</label>
+            <input
+              type="number"
+              class="form-control"
+              name="price"
+              id="price"
+              step="0.01"
+              min="0.01"
+              placeholder="Enter item price"
+            />
+          </div>
+          <div class="col">
+            <label for="quantity">Quantity</label>
+            <input
+              type="number"
+              class="form-control"
+              name="quantity"
+              id="quantity"
+              min="0"
+              placeholder="Enter item quantity"
+            />
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <label for="image">Image</label>
+          <input
+            type="url"
+            class="form-control"
+            name="image"
+            id="image"
+            placeholder="https://yourimage.com/image.jpg"
+          />
+        </div>
+        <button type="submit" class="btn btn-info mt-3">Update</button>
+      </form>
+    </main>
+    <script src="shared.js"></script>
+    <script src="edit.js"></script>
+  </body>
+</html>
